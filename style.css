@@ -1,0 +1,163 @@
+:root {
+  --white: #f0f0f0;
+  --gray: #777;
+  --light:#00ffff;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	background-color:#f2f3e2;
+	font-family:"Arial","Sans-serif";
+}
+
+a{
+	color:#8b8b8b;
+	text-decoration:none;
+}
+a:hover{color:#ccc;}
+
+ol{list-style:square;padding-left:10px;}
+ol li{margin:10px;}
+ul{list-style:none;}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.nav-list a:hover {
+  background: var(--light);
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(45deg, #ffe0de 0%, #ffffde 100%);
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.project-image {
+  height: calc(100% - 2.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  color:var(--white);
+  font-size: 1rem;
+  padding: 0.5rem 0.1rem;
+  margin:0;
+  text-align:center;
+}
+
+.code{color:var(--gray);}
+.project:hover .code{color:#00ffff;}
+
+.photo{width:70%;min-width:500px;margin:0 auto;}
+
+
+header{
+	font-weight:bold;
+	text-align:center;
+	color:#8b8b8b;
+	font-size:20px;
+	height:40px;
+	margin-top:20px;
+}
+
+.title1{
+	text-align: center;
+    margin-bottom: 0px;
+    font-size: 60px;
+    color: #6c6c6c;
+	font-weight:bold;
+}
+.title2{
+	text-align:center;
+	color:#6c6c6c;
+	font-size: 25px;
+    margin-top: 5px;
+}
+.title_3{
+	text-align:center;
+	color:#6c6c6c;
+	font-size: 50px;
+  font-weight:bold;
+}
+
+.image{text-align:center;}
+.image img{width:100%;max-width:700px;}
+
+#contact{
+  color:#777;
+  margin:0 auto 3rem;
+  width:500px;
+}
+
+
+footer{
+	font-size:14px;
+	color:#a5a5a5;
+	text-align:center;
+	margin:10px;
+}
